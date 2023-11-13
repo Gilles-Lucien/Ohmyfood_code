@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Sass Boilerplate
 
 This is a sample project using the [7-1 architecture pattern](https://sass-guidelin.es/#architecture) and sticking to [Sass Guidelines](https://sass-guidelin.es) writing conventions.
@@ -31,3 +32,6 @@ npm install -g sass
 ```bash
 sass stylesheets/main.scss dist/main.css
 ```
+=======
+# Ohmyfood_code
+>>>>>>> c4a6491a9d9f1b32a1b5e3e03ace27c3342a8cef
