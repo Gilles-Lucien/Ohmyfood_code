@@ -8,7 +8,7 @@
 
 /// Regular font family
 /// @type List
-$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$text-font-stack: 'Roboto', 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
 
 /// Code (monospace) font family
 /// @type List
@@ -20,31 +20,39 @@ $code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
 
 /// Copy text color
 /// @type Color
-$text-color: rgb(34, 34, 34) !default;
+$text-color: rgb(0, 0, 0) !default;
 
 /// Main brand color
 /// @type Color
-$brand-color: rgb(229, 0, 80) !default;
+$brand-color: #9356dc !default;
 
-/// Light grey
+/// Main brand color pink for gradient
 /// @type Color
-$light-grey: rgb(237, 237, 237) !default;
+$brand-color-pink: #FF79DA !default;
+
+/// Secondary brand color
+/// @type Color
+$brand-color-secondary: #99E2D0 !default;
+
+/// Secondary brand color darker
+/// @type Color
+$brand-color-secondary-darker: #008766 !default;
 
 /// Medium grey
 /// @type Color
-$mid-grey: rgb(153, 153, 153) !default;
+$mid-grey: #f4f4f4 !default;
 
 /// Dark grey
 /// @type Color
-$dark-grey: rgb(68, 68, 68) !default;
-
+$dark-grey: #eaeaea !default;
+ 
 
 
 
 
 /// Container's maximum width
 /// @type Length
-$max-width: 1180px !default;
+$max-width: 1080px !default;
 
 
 
