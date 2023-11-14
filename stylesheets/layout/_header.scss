@@ -1,3 +1,18 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+
+.header {
+  display: flex;
+  height: 113px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-shrink: 0;
+  &__logo {
+    width: 60%;
+    max-width: 200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+}
