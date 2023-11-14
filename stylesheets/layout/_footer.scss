@@ -1,3 +1,16 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    height: 186px;
+    background-color: $dark-grey;
+    padding: 22px 25px 22px 25px;
+    -webkit-text-fill-color: #fff;
+    a {
+        color: #fff;
+    }
+}
