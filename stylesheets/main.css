@@ -331,11 +331,11 @@ html {
  * Basic styles for links
  */
 a {
-  color: rgb(229, 0, 80);
+  color: #9356dc;
   text-decoration: none;
 }
 a:hover, a:active, a:focus, a:focus-within {
-  color: rgb(34, 34, 34);
+  color: rgb(0, 0, 0);
   text-decoration: underline;
 }
 
@@ -343,8 +343,8 @@ a:hover, a:active, a:focus, a:focus-within {
  * Basic typography style for copy text
  */
 body {
-  color: rgb(34, 34, 34);
-  font: normal 125%/1.4 "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  color: rgb(0, 0, 0);
+  font: normal 125%/1.4 "Roboto", "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 /**
@@ -363,7 +363,7 @@ body {
  * 3. Leave some space on the edges, especially valuable on small screens
  */
 .container {
-  max-width: 1180px; /* 1 */
+  max-width: 1080px; /* 1 */
   margin-left: auto; /* 2 */
   margin-right: auto; /* 2 */
   padding-left: 20px; /* 3 */
@@ -397,4 +397,19 @@ body {
   padding: 0;
   position: absolute;
   width: 1px;
+}
+
+.header {
+  display: flex;
+  height: 113px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.header__logo {
+  width: 60%;
+  max-width: 200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }/*# sourceMappingURL=main.css.map */
