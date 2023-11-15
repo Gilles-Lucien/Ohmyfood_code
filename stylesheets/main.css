@@ -428,4 +428,23 @@ body {
 }
 .footer a {
   color: #fff;
+}
+.footer__logo {
+  margin-bottom: 16px;
+}
+.footer__lien {
+  display: block;
+  font-weight: 400;
+}
+.footer__LienEtPicto {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 600;
+}
+.footer__LienEtPicto .fa-solid {
+  margin-right: 11px;
+}
+.footer__LienEtPicto .fa-handshake-angle {
+  font-size: 0.7em;
 }/*# sourceMappingURL=main.css.map */
