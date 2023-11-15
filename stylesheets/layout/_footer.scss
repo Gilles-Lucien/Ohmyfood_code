@@ -2,15 +2,34 @@
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
 
-
 .footer {
+  display: flex;
+  flex-direction: column;
+  height: 186px;
+  background-color: $dark-grey;
+  padding: 22px 25px 22px 25px;
+  -webkit-text-fill-color: #fff;
+  a {
+    color: #fff;
+  }
+  &__logo {
+    margin-bottom: 16px;
+  }
+  &__lien {
+    display: block;
+    font-weight: 400;
+  }
+  &__LienEtPicto {
     display: flex;
-    flex-direction: column;
-    height: 186px;
-    background-color: $dark-grey;
-    padding: 22px 25px 22px 25px;
-    -webkit-text-fill-color: #fff;
-    a {
-        color: #fff;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 600;
+
+    & .fa-solid {
+      margin-right: 11px;
     }
+    & .fa-handshake-angle {
+      font-size: 0.7em;
+    }
+  }
 }
