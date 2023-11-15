@@ -55,6 +55,10 @@ body {
   font: normal 125%/1.4 "Roboto", "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
+h1 {
+  font-size: 1.1em;
+}
+
 /**
  * Clear inner floats
  */
@@ -206,6 +210,51 @@ body {
   text-align: center;
   font-weight: 300;
   margin-bottom: 27px;
+}
+
+/**
+ * Section fonctionnement home page
+ */
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+  padding: 48px 20px 68px 20px;
+}
+.fonctionnement h1 {
+  margin-top: 0;
+  margin-bottom: 26px;
+}
+.fonctionnement__card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #f4f4f4;
+  border-radius: 20px;
+  margin-bottom: 25px;
+  position: relative;
+  left: 12px;
+  width: 97%;
+  justify-content: flex-start;
+}
+.fonctionnement__card .fa-solid {
+  margin-right: 25px;
+  margin-left: 11px;
+}
+.fonctionnement__card div {
+  color: #fff;
+  font-size: 0.7em;
+  background: #9356dc;
+  width: 24px;
+  height: 24px;
+  padding: 3px;
+  border-radius: 50%;
+  text-align: center;
+  position: relative;
+  right: 12px;
+}
+.fonctionnement__card div p {
+  margin: 0;
+  font-size: 16px;
 }
 
 button {
