@@ -1,3 +1,168 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
+
+/***
+ *    ██   ██  ██████  ███    ███ ███████     ██████   █████   ██████  ███████ 
+ *    ██   ██ ██    ██ ████  ████ ██          ██   ██ ██   ██ ██       ██      
+ *    ███████ ██    ██ ██ ████ ██ █████       ██████  ███████ ██   ███ █████   
+ *    ██   ██ ██    ██ ██  ██  ██ ██          ██      ██   ██ ██    ██ ██      
+ *    ██   ██  ██████  ██      ██ ███████     ██      ██   ██  ██████  ███████ 
+ *                                                                             
+ *                                                                             
+ */
+
+/**
+ * Section location
+ */
+
+.location {
+  display: flex;
+  position: relative;
+  z-index: 1;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 17px;
+  background-color: $mid-grey;
+  color: $dark-grey;
+  /*opacity: 0.5;*/
+  height: 50px;
+  &__input {
+    border: none;
+    background: none;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 0;
+    width: 40%;
+  }
+  ::placeholder {
+    color: $dark-grey;
+  }
+}
+
+/**
+ * Section presentation
+ */
+
+.presentation {
+  display: flex;
+  flex-direction: column;
+  background-color: $light-grey;
+  padding-bottom: 57px;
+
+  h1 {
+    font-family: Roboto;
+    font-size: 1.3em;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.2em;
+    width: 70%;
+    margin: auto;
+    margin-top: 40px;
+  }
+  p {
+    font-size: 0.9em;
+    line-height: 1.1em;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 27px;
+  }
+}
+
+/**
+ * Section fonctionnement
+*/
+
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 48px 20px 68px 20px;
+  h1 {
+    margin-top: 0;
+  }
+  &__card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: $light-grey;
+    border-radius: 20px;
+    margin-left: 12px;
+    justify-content: flex-start;
+    font-size: 0.8em;
+    font-weight: 500;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    .fa-solid {
+      margin-right: 25px;
+      margin-left: 11px;
+    }
+    div {
+      color: #fff;
+      font-size: 0.7em;
+      background: $brand-color;
+      width: 24px;
+      height: 24px;
+      padding: 3px;
+      border-radius: 50%;
+      text-align: center;
+      position: relative;
+      right: 12px;
+      p {
+        margin: 0;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+/**
+ * Section restaurants
+*/
+
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  background: $light-grey;
+  padding: 55px 20px 65px 20px;
+  h1 {
+    margin: 0;
+    margin-bottom: 8px;
+  }
+  &__card {
+    position: relative;
+    background: #fff;
+    border-radius: 15px 15px 15px 15px;
+    img {
+      width: 100%;
+      height: 251px;
+      object-fit: cover;
+      border-radius: 15px 15px 0 0;
+    }
+    h2 {
+      font-size: 1em;
+      font-weight: 700;
+      margin: 0;
+      margin-top: 16px;
+      margin-left: 16px;
+      margin-bottom: 5px;
+    }
+    p {
+      font-size: 0.9em;
+      font-weight: 300;
+      margin: 0;
+      margin-left: 16px;
+      margin-bottom: 12px;
+    }
+    :last-child {
+      width: 22px;
+      height: 21px;
+      position: absolute;
+      right: 25px;
+      bottom: 33px;
+      margin: 0;
+      border-radius: 0;
+    }
+  }
+}
