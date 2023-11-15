@@ -1,3 +1,7 @@
+/**
+ * Section fonctionnement home page
+ */
+
 .fonctionnement {
   display: flex;
   flex-direction: column;
@@ -34,6 +38,7 @@
       right: 12px;
       p {
         margin: 0;
+        font-size: 16px;
       }
     }
   }
