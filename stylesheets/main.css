@@ -401,6 +401,8 @@ body {
 
 .header {
   display: flex;
+  position: relative;
+  z-index: 2;
   height: 63px;
   flex-direction: row;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
@@ -447,4 +449,50 @@ body {
 }
 .footer__LienEtPicto .fa-handshake-angle {
   font-size: 0.7em;
+}
+
+.location {
+  display: flex;
+  position: relative;
+  z-index: 1;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 17px;
+  background-color: #eaeaea;
+  /*opacity: 0.5;*/
+  height: 50px;
+}
+.location__input {
+  border: none;
+  background: none;
+  font-size: 1em;
+  font-weight: 600;
+  padding: 0;
+  width: 40%;
+}
+.location ::-moz-placeholder {
+  color: #000;
+}
+.location ::placeholder {
+  color: #000;
+}
+
+.presentation {
+  display: flex;
+  flex-direction: column;
+}
+.presentation h1 {
+  font-family: Roboto;
+  font-size: 1.3em;
+  font-weight: 700;
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  margin-top: 40px;
+}
+.presentation p {
+  font-size: 0.9em;
+  text-align: center;
+  font-weight: 300;
 }/*# sourceMappingURL=main.css.map */
