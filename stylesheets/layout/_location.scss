@@ -1,3 +1,23 @@
 .location {
-    background-color: $dark-grey;
+  display: flex;
+  position: relative;
+  z-index: 1;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 17px;
+  background-color: $mid-grey;
+  /*opacity: 0.5;*/
+  height: 50px;
+  &__input {
+    border: none;
+    background: none;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 0;
+    width: 40%;
+  }
+  ::placeholder {
+    color: #000;
+  }
 }
