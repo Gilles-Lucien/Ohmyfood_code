@@ -315,6 +315,7 @@ button:hover {
   position: relative;
   background: #fff;
   border-radius: 15px 15px 15px 15px;
+  /* mise en place temporaire du picto coeur en attendant le cours sur les animation CSS*/
 }
 .restaurants__card img {
   width: 100%;
