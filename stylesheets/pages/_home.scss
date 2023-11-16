@@ -34,7 +34,7 @@
     font-size: 1em;
     font-weight: 600;
     padding: 0;
-    width: 40%;
+    width: 150px;
   }
   ::placeholder {
     color: $dark-grey;
@@ -73,52 +73,80 @@
 /**
  * Section fonctionnement
 */
-
 .fonctionnement {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
   padding: 48px 20px 68px 20px;
-  h1 {
-    margin-top: 0;
-  }
-  &__card {
+  max-width: $max-width;
+  margin: auto;
+
+  @media (min-width: 1080px) {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    background: $light-grey;
-    border-radius: 20px;
-    margin-left: 12px;
-    justify-content: flex-start;
-    font-size: 0.8em;
-    font-weight: 500;
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-    .fa-solid {
-      margin-right: 25px;
-      margin-left: 11px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+    align-self: stretch;
+    padding: 50px 0 50px 0;
+  }
+
+  h1 {
+    margin-bottom: 25px;
+    margin-top: 0px;
+    @media (min-width: 1080px) {
+    margin-bottom: 0px;
     }
-    .fa-store {
-      color: $brand-color;
+  }
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    @media (min-width: 1080px) {
+      display: flex-start;
+      flex-direction: row;
+      width: 100%;
+      gap: 25px;
     }
-    div {
-      color: #fff;
-      font-size: 0.7em;
-      background: $brand-color;
-      width: 24px;
-      height: 24px;
-      padding: 3px;
-      border-radius: 50%;
-      text-align: center;
-      position: relative;
-      right: 12px;
-      p {
-        margin: 0;
-        font-size: 14px;
+
+    &__card {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      background: $light-grey;
+      border-radius: 20px;
+      margin-left: 12px;
+      justify-content: flex-start;
+      font-size: 0.8em;
+      font-weight: 500;
+      box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+      .fa-solid {
+        margin-right: 25px;
+        margin-left: 11px;
+      }
+      .fa-store {
+        color: $brand-color;
+      }
+      div {
+        color: #fff;
+        font-size: 0.7em;
+        background: $brand-color;
+        width: 24px;
+        height: 24px;
+        padding: 3px;
+        border-radius: 50%;
+        text-align: center;
+        position: relative;
+        right: 12px;
+        p {
+          margin: 0;
+          font-size: 14px;
+        }
+      }
+      @media (min-width: 1080px) {
+        width: 30%;
+        padding: 10px 0 10px 0;
       }
     }
   }
 }
-
 /**
  * Section restaurants
 */
