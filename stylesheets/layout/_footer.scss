@@ -4,32 +4,76 @@
 
 .footer {
   display: flex;
+  position: relative;
   flex-direction: column;
   height: 186px;
   background-color: $dark-grey;
   padding: 22px 25px 22px 25px;
   -webkit-text-fill-color: #fff;
+
+  @media screen and (min-width: 1080px) {
+    flex-direction: row;
+    gap: 30px;
+    justify-content: flex-end;
+    padding-bottom: 30px;
+    padding-right: 30px;
+  }
+
+  &__liens {
+    @media screen and (min-width: 1080px) {
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+    }
+  }
+
   a {
     color: #fff;
   }
+
   &__logo {
     margin-bottom: 16px;
+    @media screen and (min-width: 1080px) {
+      display: flex;
+      order: 2;
+      margin-bottom: 0;
+      position: relative;
+      top: 107px;
+
+    }
   }
+
   &__lien {
-    display: block;
+    display: flex;
     font-weight: 400;
+    @media screen and (min-width: 1080px) {
+      align-items: end;
+
+    }
   }
+
   &__LienEtPicto {
     display: flex;
     flex-direction: row;
     align-items: center;
     font-weight: 500;
+    @media screen and (min-width: 1080px) {
+      align-items: end;
+    }
+
 
     & .fa-solid {
       margin-right: 11px;
+      @media screen and (min-width: 1080px) {
+        margin-bottom: 5px;
+      }
     }
+
     & .fa-handshake-angle {
       font-size: 0.7em;
     }
+
+
+
   }
 }
