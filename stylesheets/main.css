@@ -146,6 +146,7 @@ h1 {
     flex-direction: row;
     gap: 30px;
     justify-content: flex-end;
+    align-items: flex-end;
     padding-bottom: 30px;
     padding-right: 30px;
   }
@@ -168,8 +169,6 @@ h1 {
     display: flex;
     order: 2;
     margin-bottom: 0;
-    position: relative;
-    top: 107px;
   }
 }
 .footer__lien {
@@ -402,6 +401,10 @@ button:hover {
   border-radius: 15px 15px 15px 15px;
   height: 251px;
   /* mise en place temporaire du picto coeur en attendant le cours sur les animation CSS*/
+  /*pour changer couleur picto, changer le background mais mettre un masque avant
+  masque sur le picto :    
+    background-clip: text; */
+  /*note : rajouter le drapeaux sur les cartes restaurants */
   /* :last-child {
     width: 22px;
     height: 21px;
