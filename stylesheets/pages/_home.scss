@@ -154,22 +154,33 @@
 .restaurants {
   display: flex;
   flex-direction: column;
-  gap: 25px;
   background: $light-grey;
   padding: 55px 20px 65px 20px;
+
   h1 {
     margin: 0;
+    margin-bottom: 25px;
   }
+
   &__cards {
     display: flex;
     flex-direction: column;
     gap: 18px;
+    @media (min-width: 1080px) {
+      flex-direction: row;
+      gap: 50px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
   }
 
   &__cards__card {
     background: #fff;
     border-radius: 15px 15px 15px 15px;
     height: 251px;
+    @media (min-width: 1080px) {
+      width: 45%;
+    }
     img {
       width: 100%;
       height: 160px;
