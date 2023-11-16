@@ -79,8 +79,8 @@ h1 {
   max-width: 1080px; /* 1 */
   margin-left: auto; /* 2 */
   margin-right: auto; /* 2 */
-  padding-left: 20px; /* 3 */
-  padding-right: 20px; /* 3 */
+  /* padding-left: 20px; /* 3 */
+  /* padding-right: 20px; /* 3 */
   width: 100%; /* 1 */
 }
 
@@ -213,7 +213,7 @@ button:hover {
   font-size: 1em;
   font-weight: 600;
   padding: 0;
-  width: 40%;
+  width: 150px;
 }
 .location ::-moz-placeholder {
   color: #353535;
@@ -253,15 +253,43 @@ button:hover {
  * Section fonctionnement
 */
 .fonctionnement {
+  padding: 48px 20px 68px 20px;
+  max-width: 1080px;
+  margin: auto;
+}
+@media (min-width: 1080px) {
+  .fonctionnement {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+    align-self: stretch;
+    padding: 50px 0 50px 0;
+  }
+}
+.fonctionnement h1 {
+  margin-bottom: 25px;
+  margin-top: 0px;
+}
+@media (min-width: 1080px) {
+  .fonctionnement h1 {
+    margin-bottom: 0px;
+  }
+}
+.fonctionnement__cards {
   display: flex;
   flex-direction: column;
   gap: 25px;
-  padding: 48px 20px 68px 20px;
 }
-.fonctionnement h1 {
-  margin-top: 0;
+@media (min-width: 1080px) {
+  .fonctionnement__cards {
+    display: flex-start;
+    flex-direction: row;
+    width: 100%;
+    gap: 25px;
+  }
 }
-.fonctionnement__card {
+.fonctionnement__cards__card {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -273,14 +301,14 @@ button:hover {
   font-weight: 500;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
-.fonctionnement__card .fa-solid {
+.fonctionnement__cards__card .fa-solid {
   margin-right: 25px;
   margin-left: 11px;
 }
-.fonctionnement__card .fa-store {
+.fonctionnement__cards__card .fa-store {
   color: #9356dc;
 }
-.fonctionnement__card div {
+.fonctionnement__cards__card div {
   color: #fff;
   font-size: 0.7em;
   background: #9356dc;
@@ -292,9 +320,15 @@ button:hover {
   position: relative;
   right: 12px;
 }
-.fonctionnement__card div p {
+.fonctionnement__cards__card div p {
   margin: 0;
   font-size: 14px;
+}
+@media (min-width: 1080px) {
+  .fonctionnement__cards__card {
+    width: 30%;
+    padding: 10px 0 10px 0;
+  }
 }
 
 /**
@@ -303,48 +337,65 @@ button:hover {
 .restaurants {
   display: flex;
   flex-direction: column;
-  gap: 18px;
   background: #f4f4f4;
   padding: 55px 20px 65px 20px;
 }
 .restaurants h1 {
   margin: 0;
-  margin-bottom: 8px;
+  margin-bottom: 25px;
 }
-.restaurants__card {
-  position: relative;
+.restaurants__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+@media (min-width: 1080px) {
+  .restaurants__cards {
+    flex-direction: row;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+.restaurants__cards__card {
   background: #fff;
   border-radius: 15px 15px 15px 15px;
-  /* mise en place temporaire du picto coeur en attendant le cours sur les animation CSS*/
-}
-.restaurants__card img {
-  width: 100%;
   height: 251px;
+  /* mise en place temporaire du picto coeur en attendant le cours sur les animation CSS*/
+  /* :last-child {
+    width: 22px;
+    height: 21px;
+    position: absolute;
+    right: 25px;
+    bottom: 33px;
+    margin: 0;
+    border-radius: 0;
+  } */
+}
+@media (min-width: 1080px) {
+  .restaurants__cards__card {
+    width: 45%;
+  }
+}
+.restaurants__cards__card img {
+  width: 100%;
+  height: 160px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 15px 15px 0 0;
 }
-.restaurants__card h2 {
+.restaurants__cards__card h2 {
   font-size: 1em;
   font-weight: 700;
   margin: 0;
-  margin-top: 16px;
+  margin-top: 8px;
   margin-left: 16px;
   margin-bottom: 5px;
 }
-.restaurants__card p {
+.restaurants__cards__card p {
   font-size: 0.9em;
   font-weight: 300;
   margin: 0;
   margin-left: 16px;
   margin-bottom: 12px;
-}
-.restaurants__card :last-child {
-  width: 22px;
-  height: 21px;
-  position: absolute;
-  right: 25px;
-  bottom: 33px;
-  margin: 0;
-  border-radius: 0;
 }/*# sourceMappingURL=main.css.map */
