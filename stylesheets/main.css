@@ -134,11 +134,28 @@ h1 {
 
 .footer {
   display: flex;
+  position: relative;
   flex-direction: column;
   height: 186px;
   background-color: #353535;
   padding: 22px 25px 22px 25px;
   -webkit-text-fill-color: #fff;
+}
+@media screen and (min-width: 1080px) {
+  .footer {
+    flex-direction: row;
+    gap: 30px;
+    justify-content: flex-end;
+    padding-bottom: 30px;
+    padding-right: 30px;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .footer__liens {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
 }
 .footer a {
   color: #fff;
@@ -146,9 +163,23 @@ h1 {
 .footer__logo {
   margin-bottom: 16px;
 }
+@media screen and (min-width: 1080px) {
+  .footer__logo {
+    display: flex;
+    order: 2;
+    margin-bottom: 0;
+    position: relative;
+    top: 107px;
+  }
+}
 .footer__lien {
-  display: block;
+  display: flex;
   font-weight: 400;
+}
+@media screen and (min-width: 1080px) {
+  .footer__lien {
+    align-items: end;
+  }
 }
 .footer__LienEtPicto {
   display: flex;
@@ -156,8 +187,18 @@ h1 {
   align-items: center;
   font-weight: 500;
 }
+@media screen and (min-width: 1080px) {
+  .footer__LienEtPicto {
+    align-items: end;
+  }
+}
 .footer__LienEtPicto .fa-solid {
   margin-right: 11px;
+}
+@media screen and (min-width: 1080px) {
+  .footer__LienEtPicto .fa-solid {
+    margin-bottom: 5px;
+  }
 }
 .footer__LienEtPicto .fa-handshake-angle {
   font-size: 0.7em;
@@ -257,7 +298,7 @@ button:hover {
   max-width: 1080px;
   margin: auto;
 }
-@media (min-width: 1080px) {
+@media screen and (min-width: 1080px) {
   .fonctionnement {
     display: flex;
     flex-direction: column;
@@ -271,7 +312,7 @@ button:hover {
   margin-bottom: 25px;
   margin-top: 0px;
 }
-@media (min-width: 1080px) {
+@media screen and (min-width: 1080px) {
   .fonctionnement h1 {
     margin-bottom: 0px;
   }
@@ -281,7 +322,7 @@ button:hover {
   flex-direction: column;
   gap: 25px;
 }
-@media (min-width: 1080px) {
+@media screen and (min-width: 1080px) {
   .fonctionnement__cards {
     display: flex-start;
     flex-direction: row;
@@ -324,7 +365,7 @@ button:hover {
   margin: 0;
   font-size: 14px;
 }
-@media (min-width: 1080px) {
+@media screen and (min-width: 1080px) {
   .fonctionnement__cards__card {
     width: 30%;
     padding: 10px 0 10px 0;
@@ -349,7 +390,7 @@ button:hover {
   flex-direction: column;
   gap: 18px;
 }
-@media (min-width: 1080px) {
+@media screen and (min-width: 1080px) {
   .restaurants__cards {
     flex-direction: row;
     gap: 50px;
@@ -372,7 +413,7 @@ button:hover {
     border-radius: 0;
   } */
 }
-@media (min-width: 1080px) {
+@media screen and (min-width: 1080px) {
   .restaurants__cards__card {
     width: 45%;
   }
