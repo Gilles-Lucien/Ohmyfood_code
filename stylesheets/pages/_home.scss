@@ -188,6 +188,20 @@
       width: 45%;
     }
 
+    span {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      font-size: 0.9rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      color: $brand-color-secondary-darker;
+      background-color: $brand-color-secondary;
+      padding: 7px 9px 7px 9px;
+      border-radius: 2px;
+    }
+
     img {
       width: 100%;
       height: 160px;
