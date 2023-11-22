@@ -3,7 +3,7 @@
 
 .backgroundLoader {
   background: linear-gradient(0deg, $brand-color 0%, $brand-color-pink 100%);
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
