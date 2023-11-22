@@ -405,6 +405,7 @@ button:hover {
   background: #fff;
   border-radius: 15px 15px 15px 15px;
   height: 251px;
+  position: relative;
 }
 @media screen and (min-width: 1080px) {
   .restaurants__cards__card {
@@ -433,6 +434,33 @@ button:hover {
   margin-left: 16px;
   margin-bottom: 12px;
 }
+.restaurants__cards__card .fa-heart {
+  position: absolute;
+  right: 25px;
+  bottom: 33px;
+}
+.restaurants__cards__card .fa-regular {
+  opacity: 1;
+  z-index: 2;
+  transition: all 200ms ease-in-out 100ms;
+}
+.restaurants__cards__card .fa-regular:hover {
+  opacity: 0;
+}
+.restaurants__cards__card .fa-regular:hover + .fa-solid {
+  opacity: 1;
+  transform: scale(1);
+}
+.restaurants__cards__card .fa-solid {
+  z-index: 1;
+  background: linear-gradient(0deg, #FF79DA 0%, #9356dc 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 300ms ease-in-out;
+}
 
 /* mise en place temporaire du picto coeur en attendant le cours sur les animation CSS*/
 /*pour changer couleur picto, changer le background mais mettre un masque avant
@@ -440,11 +468,11 @@ masque sur le picto :
   background-clip: text; */
 /*note : rajouter le drapeaux sur les cartes restaurants */
 /* :last-child {
-  width: 22px;
-  height: 21px;
-  position: absolute;
-  right: 25px;
-  bottom: 33px;
-  margin: 0;
-  border-radius: 0;
-} *//*# sourceMappingURL=main.css.map */
+      width: 22px;
+      height: 21px;
+      position: absolute;
+      right: 25px;
+      bottom: 33px;
+      margin: 0;
+      border-radius: 0;
+    } *//*# sourceMappingURL=main.css.map */
