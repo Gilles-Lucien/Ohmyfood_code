@@ -17,17 +17,16 @@
  */
 
 .location {
-  display: flex;
+  @include flex-center;
   position: relative;
   z-index: 1;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
   gap: 17px;
   background-color: $mid-grey;
   color: $dark-grey;
   /*opacity: 0.5;*/
   height: 50px;
+  
   &__input {
     border: none;
     background: none;
@@ -36,6 +35,7 @@
     padding: 0;
     width: 150px;
   }
+  
   ::placeholder {
     color: $dark-grey;
   }
@@ -46,8 +46,7 @@
  */
 
 .presentation {
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
   background-color: $light-grey;
   padding-bottom: 57px;
 
@@ -61,6 +60,7 @@
     margin: auto;
     margin-top: 40px;
   }
+  
   p {
     font-size: 0.9em;
     line-height: 1.1em;
@@ -78,9 +78,8 @@
   max-width: $max-width;
   margin: auto;
 
-  @media screen and (min-width: 1080px) {
-    display: flex;
-    flex-direction: column;
+  @media screen and (min-width: $breakpoints) {
+    @include flex-column;
     align-items: flex-start;
     gap: 25px;
     align-self: stretch;
@@ -90,16 +89,17 @@
   h1 {
     margin-bottom: 25px;
     margin-top: 0px;
-    @media screen and (min-width: 1080px) {
+    
+    @media screen and (min-width: $breakpoints) {
       margin-bottom: 0px;
     }
   }
+  
   &__cards {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     gap: 25px;
 
-    @media screen and (min-width: 1080px) {
+    @media screen and (min-width: $breakpoints) {
       flex-direction: row;
       width: 100%;
       gap: 25px;
@@ -116,13 +116,16 @@
       font-size: 0.8em;
       font-weight: 500;
       box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+      
       .fa-solid {
         margin-right: 25px;
         margin-left: 11px;
       }
+      
       .fa-store {
         color: $brand-color;
       }
+      
       div {
         color: #fff;
         font-size: 0.7em;
@@ -134,25 +137,27 @@
         text-align: center;
         position: relative;
         right: 12px;
+        
         p {
           margin: 0;
           font-size: 14px;
         }
       }
-      @media screen and (min-width: 1080px) {
+      
+      @media screen and (min-width: $breakpoints) {
         width: 30%;
         padding: 10px 0 10px 0;
       }
     }
   }
 }
+
 /**
  * Section restaurants
 */
 
 .restaurants {
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
   background: $light-grey;
   padding: 55px 20px 65px 20px;
 
@@ -162,10 +167,10 @@
   }
 
   &__cards {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     gap: 18px;
-    @media screen and (min-width: 1080px) {
+    
+    @media screen and (min-width: $breakpoints) {
       flex-direction: row;
       gap: 50px;
       flex-wrap: wrap;
@@ -177,15 +182,18 @@
     background: #fff;
     border-radius: 15px 15px 15px 15px;
     height: 251px;
-    @media screen and (min-width: 1080px) {
+    
+    @media screen and (min-width: $breakpoints) {
       width: 45%;
     }
+    
     img {
       width: 100%;
       height: 160px;
       object-fit: cover;
       border-radius: 15px 15px 0 0;
     }
+    
     h2 {
       font-size: 1em;
       font-weight: 700;
@@ -194,6 +202,7 @@
       margin-left: 16px;
       margin-bottom: 5px;
     }
+    
     p {
       font-size: 0.9em;
       font-weight: 300;
@@ -201,6 +210,10 @@
       margin-left: 16px;
       margin-bottom: 12px;
     }
+  }
+}
+
+
     /* mise en place temporaire du picto coeur en attendant le cours sur les animation CSS*/
 
 /*pour changer couleur picto, changer le background mais mettre un masque avant
@@ -218,5 +231,3 @@ masque sur le picto :
       margin: 0;
       border-radius: 0;
     } */
-  }
-}
