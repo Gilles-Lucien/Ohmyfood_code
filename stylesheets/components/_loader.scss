@@ -1,0 +1,104 @@
+/// Ceci est le composant du loader
+///
+
+.backgroundLoader {
+  background: linear-gradient(0deg, $brand-color 0%, $brand-color-pink 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  opacity: 1;
+}
+
+.loader {
+  animation: rotate 1.5s infinite;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: calc(50% - 25px);
+  left: calc(50% - 25px);
+}
+
+.loader:before,
+.loader:after {
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 20px;
+  width: 20px;
+}
+.loader:before {
+  animation: ball1 1.5s infinite;
+  background-color: #fff;
+  box-shadow: 30px 0 0 #fff;
+  margin-bottom: 10px;
+}
+.loader:after {
+  animation: ball2 1.5s infinite;
+  background-color: #fff;
+  box-shadow: 30px 0 0 #fff;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) scale(0.8);
+  }
+  50% {
+    transform: rotate(360deg) scale(1.2);
+  }
+  100% {
+    transform: rotate(720deg) scale(0.8);
+  }
+}
+
+@keyframes ball1 {
+  0% {
+    box-shadow: 30px 0 0 $brand-color-secondary;
+  }
+  50% {
+    box-shadow: 0 0 0 $brand-color-secondary;
+    margin-bottom: 0;
+    transform: translate(15px, 15px);
+  }
+  100% {
+    box-shadow: 30px 0 0 $brand-color-secondary;
+    margin-bottom: 10px;
+  }
+}
+
+@keyframes ball2 {
+  0% {
+    box-shadow: 30px 0 0 #fff;
+  }
+  50% {
+    box-shadow: 0 0 0 #fff;
+    margin-top: -20px;
+    transform: translate(15px, 15px);
+  }
+  100% {
+    box-shadow: 30px 0 0 #fff;
+    margin-top: 0;
+  }
+}
+
+@keyframes backgroundFadeOut {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    display: none;
+    opacity: 0;
+  }
+}
+
+.backgroundLoader {
+  animation-name: backgroundFadeOut;
+  animation-duration: 200ms;
+  animation-delay: 3000ms;
+  animation-fill-mode: forwards;
+}
