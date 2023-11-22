@@ -1,4 +1,9 @@
 @charset "UTF-8";
+/*$breakpoints: (
+  'small': 375px,
+  'medium': 768px,
+  'large': 1080px,
+) !default;*/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Sections
    ========================================================================== */
@@ -236,11 +241,11 @@ button:hover {
  */
 .location {
   display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   z-index: 1;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
   gap: 17px;
   background-color: #eaeaea;
   color: #353535;
@@ -400,20 +405,6 @@ button:hover {
   background: #fff;
   border-radius: 15px 15px 15px 15px;
   height: 251px;
-  /* mise en place temporaire du picto coeur en attendant le cours sur les animation CSS*/
-  /*pour changer couleur picto, changer le background mais mettre un masque avant
-  masque sur le picto :    
-    background-clip: text; */
-  /*note : rajouter le drapeaux sur les cartes restaurants */
-  /* :last-child {
-    width: 22px;
-    height: 21px;
-    position: absolute;
-    right: 25px;
-    bottom: 33px;
-    margin: 0;
-    border-radius: 0;
-  } */
 }
 @media screen and (min-width: 1080px) {
   .restaurants__cards__card {
@@ -441,4 +432,19 @@ button:hover {
   margin: 0;
   margin-left: 16px;
   margin-bottom: 12px;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/* mise en place temporaire du picto coeur en attendant le cours sur les animation CSS*/
+/*pour changer couleur picto, changer le background mais mettre un masque avant
+masque sur le picto :    
+  background-clip: text; */
+/*note : rajouter le drapeaux sur les cartes restaurants */
+/* :last-child {
+  width: 22px;
+  height: 21px;
+  position: absolute;
+  right: 25px;
+  bottom: 33px;
+  margin: 0;
+  border-radius: 0;
+} *//*# sourceMappingURL=main.css.map */
