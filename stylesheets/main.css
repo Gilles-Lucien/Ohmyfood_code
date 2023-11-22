@@ -46,11 +46,12 @@ html {
  * Basic styles for links
  */
 a {
-  text-decoration: none;
-}
-a:hover, a:active, a:focus, a:focus-within {
-  color: rgb(0, 0, 0);
-  text-decoration: underline;
+  all: unset;
+  cursor: pointer;
+  /* @include on-event {
+     color: $text-color;
+     text-decoration: underline;
+   }*/
 }
 
 /**
