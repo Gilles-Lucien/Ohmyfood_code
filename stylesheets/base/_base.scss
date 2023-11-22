@@ -25,10 +25,12 @@ html {
  * Basic styles for links
  */
 a {
-  text-decoration: none;
+  all: unset;
+  cursor: pointer;
 
-  @include on-event {
+
+ /* @include on-event {
     color: $text-color;
     text-decoration: underline;
-  }
+  }*/
 }
