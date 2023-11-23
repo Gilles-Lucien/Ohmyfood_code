@@ -34,10 +34,9 @@
   }
 }
 
-
 /// À appliquer pour tous les pseudo-éléments ::before et ::after
 
-@mixin pseudo($display: block, $pos: absolute, $content: ''){
+@mixin pseudo($display: block, $pos: absolute, $content: "") {
   content: $content;
   display: $display;
   position: $pos;
@@ -69,4 +68,30 @@
 @mixin flex-center-horiz {
   display: flex;
   justify-content: center;
+}
+
+/// animation pictos coeurs. Regular = coeur vide, Solid = coeur plein. Les deux mixins sont à appliquer respectivement sur le coeur regular et le coeur solid
+
+@mixin HeartHoverEffectRegular {
+  opacity: 1;
+  z-index: 2;
+  transition: all 200ms ease-in-out 100ms;
+  &:hover {
+    opacity: 0;
+  }
+  &:hover + .fa-solid {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@mixin HeartHoverEffectSolid {
+  z-index: 1;
+  background: linear-gradient(0deg, $brand-color-pink 0%, $brand-color 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 300ms ease-in-out;
 }
