@@ -510,7 +510,7 @@ button:hover {
 }
 @media screen and (min-width: 1080px) {
   .restaurants__cards__card {
-    width: 45%;
+    width: 490px;
   }
 }
 .restaurants__cards__card span {
