@@ -602,15 +602,14 @@ button:hover {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.mainRestaurants button {
-  margin-bottom: 40px;
-}
 .mainRestaurants section {
   position: relative;
   z-index: 2;
+  max-width: 1055px;
+  margin: auto;
   background-color: #f4f4f4;
   border-radius: 50px 50px 0 0;
-  padding: 32px 17px 32px 17px;
+  padding: 32px 17px 40px 17px;
 }
 .mainRestaurants section h1 {
   font-family: Shrikhand;
@@ -648,6 +647,9 @@ button:hover {
   transition: all 300ms ease-in-out;
 }
 
+.underlinedH2 {
+  margin-bottom: 12px;
+}
 .underlinedH2 h2 {
   font-family: Roboto;
   font-size: 16px;
@@ -673,11 +675,16 @@ button:hover {
   display: inherit;
   flex-direction: row;
   justify-content: space-between;
+  position: relative;
   background-color: #fff;
-  padding: 15px 0 15px 15px;
+  padding: 0 0 0 15px;
   border-radius: 15px;
-  align-items: end;
+  align-items: center;
+  height: 70px;
   box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
+}
+.menu__card__content {
+  overflow: hidden;
 }
 .menu__card__content h3 {
   overflow: hidden;
@@ -688,7 +695,7 @@ button:hover {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  margin: 0 0 5px 0;
+  margin: 0;
 }
 .menu__card__content p {
   overflow: hidden;
@@ -715,7 +722,12 @@ button:hover {
   margin: 0;
 }
 .menu__card__check {
+  display: flex;
   background-color: #99E2D0;
   color: #fff;
   height: 100%;
+  width: 60px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 15px 15px 0;
 }/*# sourceMappingURL=main.css.map */

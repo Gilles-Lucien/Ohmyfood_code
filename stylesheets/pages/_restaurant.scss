@@ -29,16 +29,14 @@
     object-fit: cover;
   }
 
-  & button {
-    margin-bottom: 40px;
-  }
-
   & section {
     position: relative;
     z-index: 2;
+    max-width: 1055px;
+    margin: auto;
     background-color: $light-grey;
     border-radius: 50px 50px 0 0;
-    padding: 32px 17px 32px 17px;
+    padding: 32px 17px 40px 17px;
     & h1 {
       font-family: Shrikhand;
       font-size: 28px;
@@ -64,6 +62,7 @@
 }
 
 .underlinedH2 {
+  margin-bottom: 12px;
   & h2 {
     font-family: Roboto;
     font-size: 16px;
@@ -89,12 +88,15 @@
     display: inherit;
     flex-direction: row;
     justify-content: space-between;
+    position: relative;
     background-color: #fff;
-    padding: 15px 0 15px 15px;
+    padding: 0 0 0 15px;
     border-radius: 15px;
-    align-items: end;
+    align-items: center;
+    height: 70px;
     box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
     &__content {
+      overflow: hidden;
       & h3 {
         overflow: hidden;
         text-overflow: ellipsis;
@@ -104,7 +106,7 @@
         font-style: normal;
         font-weight: 500;
         line-height: normal;
-        margin: 0 0 5px 0;
+        margin: 0;
       }
       & p {
         overflow: hidden;
@@ -122,7 +124,7 @@
         margin-inline-end: 0;
       }
     }
-    
+
     &__price {
       text-align: center;
       font-family: Roboto;
@@ -134,9 +136,14 @@
     }
 
     &__check {
-        background-color: $brand-color-secondary;
-        color: #fff;
-        height: 100%;
+      display: flex;
+      background-color: $brand-color-secondary;
+      color: #fff;
+      height: 100%;
+      width: 60px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0 15px 15px 0;
     }
   }
 }
