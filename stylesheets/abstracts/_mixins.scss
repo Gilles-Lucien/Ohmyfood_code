@@ -95,3 +95,11 @@
   transform: scale(0);
   transition: all 300ms ease-in-out;
 }
+
+/// Largeur maximum du contenu pour desktop
+
+@mixin max-content-width {
+  max-width: 634px;
+  margin-right: auto;
+  margin-left: auto;
+}
