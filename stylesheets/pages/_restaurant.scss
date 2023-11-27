@@ -112,7 +112,7 @@
     border-radius: 15px;
     align-items: center;
     height: 70px;
-    clip-path: inset(0 0 0 0 round 15px 15px 15px 15px);
+    clip-path: inset(0 0 0 0 round 15px);
     box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
     &:hover {
       & .menu__card__priceAndcheck__check {
