@@ -593,11 +593,6 @@ button:hover {
  *                                                                                                                                                       
  *                                                                                                                                                       
  */
-/*reset margin p */
-p {
-  margin: 0;
-}
-
 .mainRestaurants img {
   width: 100%;
   height: 275px;
@@ -616,32 +611,48 @@ p {
   border-radius: 50px 50px 0 0;
   padding: 32px 17px 40px 17px;
 }
-.mainRestaurants section h1 {
+.mainRestaurants section .titleAndHeart {
+  display: flex;
+  justify-content: flex-start;
+}
+@media screen and (min-width: 1080px) {
+  .mainRestaurants section .titleAndHeart {
+    max-width: 634px;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+  }
+}
+.mainRestaurants section .titleAndHeart h1 {
   font-family: Shrikhand;
   font-size: 28px;
   font-weight: 400;
   margin-block-start: 0;
   margin-block-end: 0;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
-.mainRestaurants section .fa-heart {
+.mainRestaurants section .titleAndHeart__heart {
+  position: relative;
+}
+.mainRestaurants section .titleAndHeart__heart .fa-heart {
   position: absolute;
-  right: 40px;
-  top: 40px;
+  margin: 10px 0 0 20px;
 }
-.mainRestaurants section .EmptyHeart {
+.mainRestaurants section .titleAndHeart__heart .EmptyHeart {
+  position: absolute;
   opacity: 1;
   z-index: 2;
   transition: all 200ms ease-in-out 100ms;
 }
-.mainRestaurants section .EmptyHeart:hover {
+.mainRestaurants section .titleAndHeart__heart .EmptyHeart:hover {
   opacity: 0;
 }
-.mainRestaurants section .EmptyHeart:hover + .fa-solid {
+.mainRestaurants section .titleAndHeart__heart .EmptyHeart:hover + .fa-solid {
   opacity: 1;
   transform: scale(1);
 }
-.mainRestaurants section .FilledHeart {
+.mainRestaurants section .titleAndHeart__heart .FilledHeart {
+  position: relative;
   z-index: 1;
   background: linear-gradient(0deg, #FF79DA 0%, #9356dc 100%);
   -webkit-background-clip: text;
@@ -669,6 +680,13 @@ p {
   background-color: #99E2D0;
   margin-top: 2px;
 }
+@media screen and (min-width: 1080px) {
+  .underlinedH2 {
+    max-width: 634px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 
 .menu {
   display: flex;
@@ -686,12 +704,15 @@ p {
   border-radius: 15px;
   align-items: center;
   height: 70px;
-  -webkit-clip-path: inset(0 0 0 0 round 0px 15px 15px 0);
-          clip-path: inset(0 0 0 0 round 0px 15px 15px 0);
+  -webkit-clip-path: inset(0 0 0 0 round 15px 15px 15px 15px);
+          clip-path: inset(0 0 0 0 round 15px 15px 15px 15px);
   box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
 }
 .menu__card:hover .menu__card__priceAndcheck__check {
   margin-right: 0;
+}
+.menu__card p {
+  margin: 0;
 }
 .menu__card__content {
   overflow: hidden;
@@ -720,6 +741,7 @@ p {
 .menu__card__priceAndcheck {
   display: flex;
   flex-direction: row;
+  margin-left: 10px;
 }
 .menu__card__priceAndcheck__price {
   text-align: center;
@@ -743,4 +765,11 @@ p {
   border-radius: 0 15px 15px 0;
   margin-right: -60px;
   transition: margin-right 0.3s ease-in-out;
+}
+@media screen and (min-width: 1080px) {
+  .menu {
+    max-width: 634px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }/*# sourceMappingURL=main.css.map */
