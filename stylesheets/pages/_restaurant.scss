@@ -124,26 +124,35 @@
         margin-inline-end: 0;
       }
     }
-
-    &__price {
-      text-align: center;
-      font-family: Roboto;
-      font-size: 15.043px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: normal;
-      margin: 0;
-    }
-
-    &__check {
+    &__priceAndcheck {
       display: flex;
-      background-color: $brand-color-secondary;
-      color: #fff;
-      height: 100%;
-      width: 60px;
-      align-items: center;
-      justify-content: center;
-      border-radius: 0 15px 15px 0;
+      flex-direction: row;
+
+      &__price {
+        position: relative;
+        top: 15px;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 0.8em;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin: 0 14px 0 5px;
+      }
+
+      &__check {
+        display: flex;
+        background-color: $brand-color-secondary;
+        color: #fff;
+        height: 70px;
+        width: 60px;
+        padding-left: 30px;
+        padding-right: 30px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0 15px 15px 0;
+
+      }
     }
   }
 }

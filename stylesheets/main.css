@@ -712,21 +712,29 @@ button:hover {
   margin-inline-start: 0;
   margin-inline-end: 0;
 }
-.menu__card__price {
+.menu__card__priceAndcheck {
+  display: flex;
+  flex-direction: row;
+}
+.menu__card__priceAndcheck__price {
+  position: relative;
+  top: 15px;
   text-align: center;
   font-family: Roboto;
-  font-size: 15.043px;
+  font-size: 0.8em;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  margin: 0;
+  margin: 0 14px 0 5px;
 }
-.menu__card__check {
+.menu__card__priceAndcheck__check {
   display: flex;
   background-color: #99E2D0;
   color: #fff;
-  height: 100%;
+  height: 70px;
   width: 60px;
+  padding-left: 30px;
+  padding-right: 30px;
   align-items: center;
   justify-content: center;
   border-radius: 0 15px 15px 0;
