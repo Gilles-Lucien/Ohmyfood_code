@@ -571,20 +571,13 @@ button:hover {
 }
 
 /***
- *    ██████  ███████ ███████ ████████  █████  ██    ██ ██████   █████  ███    ██ ████████      ██                                                       
- *    ██   ██ ██      ██         ██    ██   ██ ██    ██ ██   ██ ██   ██ ████   ██    ██        ███                                                       
- *    ██████  █████   ███████    ██    ███████ ██    ██ ██████  ███████ ██ ██  ██    ██         ██                                                       
- *    ██   ██ ██           ██    ██    ██   ██ ██    ██ ██   ██ ██   ██ ██  ██ ██    ██         ██                                                       
- *    ██   ██ ███████ ███████    ██    ██   ██  ██████  ██   ██ ██   ██ ██   ████    ██         ██                                                       
- *                                                                                                                                                       
- *                                                                                                                                                       
- *     ██ ██       █████      ██████   █████  ██      ███████ ████████ ████████ ███████     ██████  ██    ██      ██████   ██████  ██    ██ ████████ ██  
- *    ██  ██      ██   ██     ██   ██ ██   ██ ██      ██         ██       ██    ██          ██   ██ ██    ██     ██       ██    ██ ██    ██    ██     ██ 
- *    ██  ██      ███████     ██████  ███████ ██      █████      ██       ██    █████       ██   ██ ██    ██     ██   ███ ██    ██ ██    ██    ██     ██ 
- *    ██  ██      ██   ██     ██      ██   ██ ██      ██         ██       ██    ██          ██   ██ ██    ██     ██    ██ ██    ██ ██    ██    ██     ██ 
- *     ██ ███████ ██   ██     ██      ██   ██ ███████ ███████    ██       ██    ███████     ██████   ██████       ██████   ██████   ██████     ██    ██  
- *                                                                                                                                                       
- *                                                                                                                                                       
+ *    ██████  ███████ ███████ ████████  █████  ██    ██ ██████   █████  ███    ██ ████████ ███████ 
+ *    ██   ██ ██      ██         ██    ██   ██ ██    ██ ██   ██ ██   ██ ████   ██    ██    ██      
+ *    ██████  █████   ███████    ██    ███████ ██    ██ ██████  ███████ ██ ██  ██    ██    ███████ 
+ *    ██   ██ ██           ██    ██    ██   ██ ██    ██ ██   ██ ██   ██ ██  ██ ██    ██         ██ 
+ *    ██   ██ ███████ ███████    ██    ██   ██  ██████  ██   ██ ██   ██ ██   ████    ██    ███████ 
+ *                                                                                                 
+ *                                                                                                 
  */
 .mainRestaurants img {
   width: 100%;
@@ -768,111 +761,101 @@ button:hover {
   }
 }
 
+.entree {
+  transform: translateY(20px);
+}
+
 .entree:nth-child(1) {
   animation-name: menuCardFadeIn;
-  animation-duration: 200ms;
+  animation-duration: 600ms;
   animation-delay: 200ms;
   animation-fill-mode: forwards;
 }
 
 .entree:nth-child(2) {
   animation-name: menuCardFadeIn;
-  animation-duration: 200ms;
-  animation-delay: 600ms;
+  animation-duration: 600ms;
+  animation-delay: 400ms;
   animation-fill-mode: forwards;
 }
 
 .entree:nth-child(3) {
   animation-name: menuCardFadeIn;
-  animation-duration: 200ms;
-  animation-delay: 1000ms;
+  animation-duration: 600ms;
+  animation-delay: 600ms;
   animation-fill-mode: forwards;
 }
 
 .entree:nth-child(4) {
   animation-name: menuCardFadeIn;
-  animation-duration: 200ms;
-  animation-delay: 1400ms;
+  animation-duration: 600ms;
+  animation-delay: 800ms;
   animation-fill-mode: forwards;
 }
 
-@keyframes menuCardFadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .plats:nth-child(1) {
   animation-name: menuCardFadeIn;
-  animation-duration: 200ms;
-  animation-delay: 1600ms;
+  animation-duration: 600ms;
+  animation-delay: 1000ms;
   animation-fill-mode: forwards;
 }
 
 .plats:nth-child(2) {
   animation-name: menuCardFadeIn;
-  animation-duration: 200ms;
-  animation-delay: 2000ms;
+  animation-duration: 600ms;
+  animation-delay: 1200ms;
   animation-fill-mode: forwards;
 }
 
 .plats:nth-child(3) {
   animation-name: menuCardFadeIn;
-  animation-duration: 200ms;
-  animation-delay: 2400ms;
+  animation-duration: 600ms;
+  animation-delay: 1400ms;
   animation-fill-mode: forwards;
 }
 
 .plats:nth-child(4) {
   animation-name: menuCardFadeIn;
-  animation-duration: 200ms;
-  animation-delay: 2800ms;
+  animation-duration: 600ms;
+  animation-delay: 1600ms;
   animation-fill-mode: forwards;
 }
 
-@keyframes menuCardFadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .dessert:nth-child(1) {
   animation-name: menuCardFadeIn;
-  animation-duration: 200ms;
-  animation-delay: 2800ms;
+  animation-duration: 600ms;
+  animation-delay: 1800ms;
   animation-fill-mode: forwards;
 }
 
 .dessert:nth-child(2) {
   animation-name: menuCardFadeIn;
-  animation-duration: 200ms;
-  animation-delay: 3200ms;
+  animation-duration: 600ms;
+  animation-delay: 2000ms;
   animation-fill-mode: forwards;
 }
 
 .dessert:nth-child(3) {
   animation-name: menuCardFadeIn;
-  animation-duration: 200ms;
-  animation-delay: 3600ms;
+  animation-duration: 600ms;
+  animation-delay: 2200ms;
   animation-fill-mode: forwards;
 }
 
 .dessert:nth-child(4) {
   animation-name: menuCardFadeIn;
-  animation-duration: 200ms;
-  animation-delay: 4000ms;
+  animation-duration: 600ms;
+  animation-delay: 2400ms;
   animation-fill-mode: forwards;
 }
 
 @keyframes menuCardFadeIn {
   0% {
     opacity: 0;
+    transform: translateY(20px);
   }
   100% {
     opacity: 1;
+    transform: translateY(0px);
   }
 }/*# sourceMappingURL=main.css.map */
