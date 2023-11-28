@@ -3,7 +3,7 @@
 // -----------------------------------------------------------------------------
 
 
-
+@use "functions" as *;
 
 
 /// Regular font family
@@ -50,7 +50,6 @@ $mid-grey: #eaeaea !default;
 /// @type Color
 $dark-grey: #353535 !default;
  
-
 
 
 
