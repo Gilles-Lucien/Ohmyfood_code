@@ -3,20 +3,13 @@
 // -----------------------------------------------------------------------------
 
 /***
- *    ██████  ███████ ███████ ████████  █████  ██    ██ ██████   █████  ███    ██ ████████      ██                                                       
- *    ██   ██ ██      ██         ██    ██   ██ ██    ██ ██   ██ ██   ██ ████   ██    ██        ███                                                       
- *    ██████  █████   ███████    ██    ███████ ██    ██ ██████  ███████ ██ ██  ██    ██         ██                                                       
- *    ██   ██ ██           ██    ██    ██   ██ ██    ██ ██   ██ ██   ██ ██  ██ ██    ██         ██                                                       
- *    ██   ██ ███████ ███████    ██    ██   ██  ██████  ██   ██ ██   ██ ██   ████    ██         ██                                                       
- *                                                                                                                                                       
- *                                                                                                                                                       
- *     ██ ██       █████      ██████   █████  ██      ███████ ████████ ████████ ███████     ██████  ██    ██      ██████   ██████  ██    ██ ████████ ██  
- *    ██  ██      ██   ██     ██   ██ ██   ██ ██      ██         ██       ██    ██          ██   ██ ██    ██     ██       ██    ██ ██    ██    ██     ██ 
- *    ██  ██      ███████     ██████  ███████ ██      █████      ██       ██    █████       ██   ██ ██    ██     ██   ███ ██    ██ ██    ██    ██     ██ 
- *    ██  ██      ██   ██     ██      ██   ██ ██      ██         ██       ██    ██          ██   ██ ██    ██     ██    ██ ██    ██ ██    ██    ██     ██ 
- *     ██ ███████ ██   ██     ██      ██   ██ ███████ ███████    ██       ██    ███████     ██████   ██████       ██████   ██████   ██████     ██    ██  
- *                                                                                                                                                       
- *                                                                                                                                                       
+ *    ██████  ███████ ███████ ████████  █████  ██    ██ ██████   █████  ███    ██ ████████ ███████ 
+ *    ██   ██ ██      ██         ██    ██   ██ ██    ██ ██   ██ ██   ██ ████   ██    ██    ██      
+ *    ██████  █████   ███████    ██    ███████ ██    ██ ██████  ███████ ██ ██  ██    ██    ███████ 
+ *    ██   ██ ██           ██    ██    ██   ██ ██    ██ ██   ██ ██   ██ ██  ██ ██    ██         ██ 
+ *    ██   ██ ███████ ███████    ██    ██   ██  ██████  ██   ██ ██   ██ ██   ████    ██    ███████ 
+ *                                                                                                 
+ *                                                                                                 
  */
 
 .mainRestaurants {
@@ -186,24 +179,18 @@
 ///
 ///
 
-/// entrées
+/// Entrées
+
+.entree {
+  transform: translateY(20px);
+}
 
 @for $i from 1 through 4 {
   .entree:nth-child(#{$i}) {
     animation-name: menuCardFadeIn;
-    animation-duration: 200ms;
-    animation-delay: #{200ms + ($i - 1) * 400ms};
+    animation-duration: 600ms;
+    animation-delay: #{200ms + ($i - 1) * 200ms};
     animation-fill-mode: forwards;
-  }
-}
-
-@keyframes menuCardFadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
   }
 }
 
@@ -213,39 +200,35 @@
 @for $i from 1 through 4 {
   .plats:nth-child(#{$i}) {
     animation-name: menuCardFadeIn;
-    animation-duration: 200ms;
-    animation-delay: #{1600ms + ($i - 1) * 400ms};
+    animation-duration: 600ms;
+    animation-delay: #{1000ms + ($i - 1) * 200ms};
     animation-fill-mode: forwards;
   }
 }
 
-@keyframes menuCardFadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
 
 /// Desserts
 
 @for $i from 1 through 4 {
   .dessert:nth-child(#{$i}) {
     animation-name: menuCardFadeIn;
-    animation-duration: 200ms;
-    animation-delay: #{2800ms + ($i - 1) * 400ms};
+    animation-duration: 600ms;
+    animation-delay: #{1800ms + ($i - 1) * 200ms};
     animation-fill-mode: forwards;
   }
 }
 
+
+/// opacité et translation
+
 @keyframes menuCardFadeIn {
   0% {
     opacity: 0;
+    transform: translateY(20px);
   }
 
   100% {
     opacity: 1;
+    transform: translateY(0px);
   }
 }
