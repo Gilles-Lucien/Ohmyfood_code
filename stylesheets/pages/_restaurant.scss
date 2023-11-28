@@ -19,8 +19,6 @@
  *                                                                                                                                                       
  */
 
-
-
 .mainRestaurants {
   & img {
     width: 100%;
@@ -114,6 +112,7 @@
     height: 70px;
     clip-path: inset(0 0 0 0 round 15px);
     box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
+    opacity: 0;
     &:hover {
       & .menu__card__priceAndcheck__check {
         margin-right: 0;
@@ -180,5 +179,73 @@
   }
   @media screen and (min-width: $breakpoints) {
     @include max-content-width;
+  }
+}
+
+/// animation d'apparition des cartes du menu
+///
+///
+
+/// entrées
+
+@for $i from 1 through 4 {
+  .entree:nth-child(#{$i}) {
+    animation-name: menuCardFadeIn;
+    animation-duration: 200ms;
+    animation-delay: #{200ms + ($i - 1) * 400ms};
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes menuCardFadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/// Plats
+
+@for $i from 1 through 4 {
+  .plats:nth-child(#{$i}) {
+    animation-name: menuCardFadeIn;
+    animation-duration: 200ms;
+    animation-delay: #{1600ms + ($i - 1) * 400ms};
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes menuCardFadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/// Desserts
+
+@for $i from 1 through 4 {
+  .dessert:nth-child(#{$i}) {
+    animation-name: menuCardFadeIn;
+    animation-duration: 200ms;
+    animation-delay: #{2800ms + ($i - 1) * 400ms};
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes menuCardFadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
