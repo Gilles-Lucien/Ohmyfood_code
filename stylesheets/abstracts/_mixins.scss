@@ -70,6 +70,14 @@
   justify-content: center;
 }
 
+/// Largeur maximum du contenu pour desktop
+
+@mixin max-content-width {
+  max-width: 634px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 /// animation pictos coeurs. Regular = coeur vide, Solid = coeur plein. Les deux mixins sont à appliquer respectivement sur le coeur regular et le coeur solid
 
 @mixin HeartHoverEffectRegular {
@@ -96,10 +104,18 @@
   transition: all 300ms ease-in-out;
 }
 
-/// Largeur maximum du contenu pour desktop
+/// Animation fade-in
 
-@mixin max-content-width {
-  max-width: 634px;
-  margin-right: auto;
-  margin-left: auto;
+@mixin FadeIn {
+  @keyframes menuCardFadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
 }
