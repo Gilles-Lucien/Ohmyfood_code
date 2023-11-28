@@ -237,6 +237,10 @@ button:hover {
   bottom: 0;
   z-index: 3;
   opacity: 1;
+  animation-name: backgroundFadeOut;
+  animation-duration: 200ms;
+  animation-delay: 3000ms;
+  animation-fill-mode: forwards;
 }
 
 .loader {
@@ -247,23 +251,19 @@ button:hover {
   top: calc(50% - 25px);
   left: calc(50% - 25px);
 }
-
-.loader:before,
-.loader:after {
+.loader:before, .loader:after {
   border-radius: 50%;
   content: "";
   display: block;
   height: 20px;
   width: 20px;
 }
-
 .loader:before {
   animation: ball1 1.5s infinite;
   background-color: #fff;
   box-shadow: 30px 0 0 #fff;
   margin-bottom: 10px;
 }
-
 .loader:after {
   animation: ball2 1.5s infinite;
   background-color: #fff;
@@ -321,13 +321,6 @@ button:hover {
     opacity: 0;
   }
 }
-.backgroundLoader {
-  animation-name: backgroundFadeOut;
-  animation-duration: 200ms;
-  animation-delay: 3000ms;
-  animation-fill-mode: forwards;
-}
-
 /***
  *    ██   ██  ██████  ███    ███ ███████     ██████   █████   ██████  ███████ 
  *    ██   ██ ██    ██ ████  ████ ██          ██   ██ ██   ██ ██       ██      
@@ -707,6 +700,7 @@ button:hover {
   -webkit-clip-path: inset(0 0 0 0 round 15px);
           clip-path: inset(0 0 0 0 round 15px);
   box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
+  opacity: 0;
 }
 .menu__card:hover .menu__card__priceAndcheck__check {
   margin-right: 0;
@@ -771,5 +765,114 @@ button:hover {
     max-width: 634px;
     margin-right: auto;
     margin-left: auto;
+  }
+}
+
+.entree:nth-child(1) {
+  animation-name: menuCardFadeIn;
+  animation-duration: 200ms;
+  animation-delay: 200ms;
+  animation-fill-mode: forwards;
+}
+
+.entree:nth-child(2) {
+  animation-name: menuCardFadeIn;
+  animation-duration: 200ms;
+  animation-delay: 600ms;
+  animation-fill-mode: forwards;
+}
+
+.entree:nth-child(3) {
+  animation-name: menuCardFadeIn;
+  animation-duration: 200ms;
+  animation-delay: 1000ms;
+  animation-fill-mode: forwards;
+}
+
+.entree:nth-child(4) {
+  animation-name: menuCardFadeIn;
+  animation-duration: 200ms;
+  animation-delay: 1400ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes menuCardFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.plats:nth-child(1) {
+  animation-name: menuCardFadeIn;
+  animation-duration: 200ms;
+  animation-delay: 1600ms;
+  animation-fill-mode: forwards;
+}
+
+.plats:nth-child(2) {
+  animation-name: menuCardFadeIn;
+  animation-duration: 200ms;
+  animation-delay: 2000ms;
+  animation-fill-mode: forwards;
+}
+
+.plats:nth-child(3) {
+  animation-name: menuCardFadeIn;
+  animation-duration: 200ms;
+  animation-delay: 2400ms;
+  animation-fill-mode: forwards;
+}
+
+.plats:nth-child(4) {
+  animation-name: menuCardFadeIn;
+  animation-duration: 200ms;
+  animation-delay: 2800ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes menuCardFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.dessert:nth-child(1) {
+  animation-name: menuCardFadeIn;
+  animation-duration: 200ms;
+  animation-delay: 2800ms;
+  animation-fill-mode: forwards;
+}
+
+.dessert:nth-child(2) {
+  animation-name: menuCardFadeIn;
+  animation-duration: 200ms;
+  animation-delay: 3200ms;
+  animation-fill-mode: forwards;
+}
+
+.dessert:nth-child(3) {
+  animation-name: menuCardFadeIn;
+  animation-duration: 200ms;
+  animation-delay: 3600ms;
+  animation-fill-mode: forwards;
+}
+
+.dessert:nth-child(4) {
+  animation-name: menuCardFadeIn;
+  animation-duration: 200ms;
+  animation-delay: 4000ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes menuCardFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }/*# sourceMappingURL=main.css.map */
