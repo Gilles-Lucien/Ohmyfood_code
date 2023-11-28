@@ -1,6 +1,7 @@
 /// Ceci est le composant du loader
 ///
 
+
 .backgroundLoader {
   background: linear-gradient(0deg, $brand-color 0%, $brand-color-pink 100%);
   position: fixed;
@@ -10,6 +11,10 @@
   bottom: 0;
   z-index: 3;
   opacity: 1;
+  animation-name: backgroundFadeOut;
+  animation-duration: 200ms;
+  animation-delay: 3000ms;
+  animation-fill-mode: forwards;
 }
 
 .loader {
@@ -19,26 +24,28 @@
   position: absolute;
   top: calc(50% - 25px);
   left: calc(50% - 25px);
-}
 
-.loader:before,
-.loader:after {
-  border-radius: 50%;
-  content: "";
-  display: block;
-  height: 20px;
-  width: 20px;
-}
-.loader:before {
-  animation: ball1 1.5s infinite;
-  background-color: #fff;
-  box-shadow: 30px 0 0 #fff;
-  margin-bottom: 10px;
-}
-.loader:after {
-  animation: ball2 1.5s infinite;
-  background-color: #fff;
-  box-shadow: 30px 0 0 #fff;
+  &:before,
+  &:after {
+    border-radius: 50%;
+    content: "";
+    display: block;
+    height: 20px;
+    width: 20px;
+  }
+
+  &:before {
+    animation: ball1 1.5s infinite;
+    background-color: #fff;
+    box-shadow: 30px 0 0 #fff;
+    margin-bottom: 10px;
+  }
+
+  &:after {
+    animation: ball2 1.5s infinite;
+    background-color: #fff;
+    box-shadow: 30px 0 0 #fff;
+  }
 }
 
 @keyframes rotate {
@@ -94,11 +101,4 @@
     display: none;
     opacity: 0;
   }
-}
-
-.backgroundLoader {
-  animation-name: backgroundFadeOut;
-  animation-duration: 200ms;
-  animation-delay: 3000ms;
-  animation-fill-mode: forwards;
 }
