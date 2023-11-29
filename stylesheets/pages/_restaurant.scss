@@ -12,6 +12,9 @@
  *                                                                                                 
  */
 
+//// Section, H1 et Coeur
+
+
 .mainRestaurants {
   & img {
     width: 100%;
@@ -67,6 +70,9 @@
   }
 }
 
+
+/// H2 et underline
+
 .underlinedH2 {
   margin-bottom: 12px;
   & h2 {
@@ -87,6 +93,8 @@
     @include max-content-width;
   }
 }
+
+/// Les cartes du menu
 
 .menu {
   display: flex;
