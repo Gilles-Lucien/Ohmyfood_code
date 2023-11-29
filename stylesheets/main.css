@@ -222,14 +222,14 @@ button {
   color: #fff;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   background: #9356dc;
-  background: linear-gradient(0deg, #9356dc 0%, #FF79DA 100%);
+  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
 }
 button:hover {
   background: linear-gradient(0deg, #a16be0 0%, #ff93e1 100%);
 }
 
 .backgroundLoader {
-  background: linear-gradient(0deg, #9356dc 0%, #FF79DA 100%);
+  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
   position: fixed;
   top: 0;
   left: 0;
@@ -283,15 +283,15 @@ button:hover {
 }
 @keyframes ball1 {
   0% {
-    box-shadow: 30px 0 0 #99E2D0;
+    box-shadow: 30px 0 0 #99e2d0;
   }
   50% {
-    box-shadow: 0 0 0 #99E2D0;
+    box-shadow: 0 0 0 #99e2d0;
     margin-bottom: 0;
     transform: translate(15px, 15px);
   }
   100% {
-    box-shadow: 30px 0 0 #99E2D0;
+    box-shadow: 30px 0 0 #99e2d0;
     margin-bottom: 10px;
   }
 }
@@ -515,7 +515,7 @@ button:hover {
   font-weight: 500;
   line-height: normal;
   color: #008766;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   padding: 7px 9px 7px 9px;
   border-radius: 2px;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
@@ -561,7 +561,7 @@ button:hover {
 }
 .restaurants__cards__card .fa-solid {
   z-index: 1;
-  background: linear-gradient(0deg, #FF79DA 0%, #9356dc 100%);
+  background: linear-gradient(0deg, #ff79da 0%, #9356dc 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -640,7 +640,7 @@ button:hover {
 .mainRestaurants section .titleAndHeart__heart .FilledHeart {
   position: relative;
   z-index: 1;
-  background: linear-gradient(0deg, #FF79DA 0%, #9356dc 100%);
+  background: linear-gradient(0deg, #ff79da 0%, #9356dc 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -663,7 +663,7 @@ button:hover {
 .underlinedH2__underline {
   width: 40px;
   height: 3px;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   margin-top: 2px;
 }
 @media screen and (min-width: 1080px) {
@@ -693,7 +693,6 @@ button:hover {
   -webkit-clip-path: inset(0 0 0 0 round 15px);
           clip-path: inset(0 0 0 0 round 15px);
   box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
-  opacity: 0;
 }
 .menu__card:hover .menu__card__priceAndcheck__check {
   margin-right: 0;
@@ -741,7 +740,7 @@ button:hover {
 }
 .menu__card__priceAndcheck__check {
   display: flex;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   color: #fff;
   height: 70px;
   width: 60px;
@@ -763,92 +762,92 @@ button:hover {
 
 .entree:nth-child(1) {
   animation-name: menuCardFadeIn;
-  animation-duration: 600ms;
+  animation-duration: 1000ms;
   animation-delay: 200ms;
-  animation-fill-mode: forwards;
+  animation-fill-mode: both;
 }
 
 .entree:nth-child(2) {
   animation-name: menuCardFadeIn;
-  animation-duration: 600ms;
+  animation-duration: 1000ms;
   animation-delay: 400ms;
-  animation-fill-mode: forwards;
+  animation-fill-mode: both;
 }
 
 .entree:nth-child(3) {
   animation-name: menuCardFadeIn;
-  animation-duration: 600ms;
+  animation-duration: 1000ms;
   animation-delay: 600ms;
-  animation-fill-mode: forwards;
+  animation-fill-mode: both;
 }
 
 .entree:nth-child(4) {
   animation-name: menuCardFadeIn;
-  animation-duration: 600ms;
+  animation-duration: 1000ms;
   animation-delay: 800ms;
-  animation-fill-mode: forwards;
+  animation-fill-mode: both;
 }
 
 .plats:nth-child(1) {
   animation-name: menuCardFadeIn;
-  animation-duration: 600ms;
+  animation-duration: 1000ms;
   animation-delay: 1000ms;
-  animation-fill-mode: forwards;
+  animation-fill-mode: both;
 }
 
 .plats:nth-child(2) {
   animation-name: menuCardFadeIn;
-  animation-duration: 600ms;
+  animation-duration: 1000ms;
   animation-delay: 1200ms;
-  animation-fill-mode: forwards;
+  animation-fill-mode: both;
 }
 
 .plats:nth-child(3) {
   animation-name: menuCardFadeIn;
-  animation-duration: 600ms;
+  animation-duration: 1000ms;
   animation-delay: 1400ms;
-  animation-fill-mode: forwards;
+  animation-fill-mode: both;
 }
 
 .plats:nth-child(4) {
   animation-name: menuCardFadeIn;
-  animation-duration: 600ms;
+  animation-duration: 1000ms;
   animation-delay: 1600ms;
-  animation-fill-mode: forwards;
+  animation-fill-mode: both;
 }
 
 .dessert:nth-child(1) {
   animation-name: menuCardFadeIn;
-  animation-duration: 600ms;
+  animation-duration: 1000ms;
   animation-delay: 1800ms;
-  animation-fill-mode: forwards;
+  animation-fill-mode: both;
 }
 
 .dessert:nth-child(2) {
   animation-name: menuCardFadeIn;
-  animation-duration: 600ms;
+  animation-duration: 1000ms;
   animation-delay: 2000ms;
-  animation-fill-mode: forwards;
+  animation-fill-mode: both;
 }
 
 .dessert:nth-child(3) {
   animation-name: menuCardFadeIn;
-  animation-duration: 600ms;
+  animation-duration: 1000ms;
   animation-delay: 2200ms;
-  animation-fill-mode: forwards;
+  animation-fill-mode: both;
 }
 
 .dessert:nth-child(4) {
   animation-name: menuCardFadeIn;
-  animation-duration: 600ms;
+  animation-duration: 1000ms;
   animation-delay: 2400ms;
-  animation-fill-mode: forwards;
+  animation-fill-mode: both;
 }
 
 @keyframes menuCardFadeIn {
   0% {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(30px);
   }
   100% {
     opacity: 1;
