@@ -113,7 +113,6 @@
     height: 70px;
     clip-path: inset(0 0 0 0 round 15px);
     box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
-    opacity: 0;
     &:hover {
       & .menu__card__priceAndcheck__check {
         margin-right: 0;
@@ -192,9 +191,9 @@
 @for $i from 1 through 4 {
   .entree:nth-child(#{$i}) {
     animation-name: menuCardFadeIn;
-    animation-duration: 600ms;
+    animation-duration: $duréeAnimationMenuCards;
     animation-delay: #{200ms + ($i - 1) * 200ms};
-    animation-fill-mode: forwards;
+    animation-fill-mode: both;
   }
 }
 
@@ -204,9 +203,9 @@
 @for $i from 1 through 4 {
   .plats:nth-child(#{$i}) {
     animation-name: menuCardFadeIn;
-    animation-duration: 600ms;
+    animation-duration: $duréeAnimationMenuCards;
     animation-delay: #{1000ms + ($i - 1) * 200ms};
-    animation-fill-mode: forwards;
+    animation-fill-mode: both;
   }
 }
 
@@ -216,13 +215,13 @@
 @for $i from 1 through 4 {
   .dessert:nth-child(#{$i}) {
     animation-name: menuCardFadeIn;
-    animation-duration: 600ms;
+    animation-duration: $duréeAnimationMenuCards;
     animation-delay: #{1800ms + ($i - 1) * 200ms};
-    animation-fill-mode: forwards;
+    animation-fill-mode: both;
   }
 }
 
 
 /// opacité et translation
 
-@include FadeIn;
+@include menuCardFadeIn;
