@@ -761,10 +761,6 @@ button:hover {
   }
 }
 
-.entree {
-  transform: translateY(20px);
-}
-
 .entree:nth-child(1) {
   animation-name: menuCardFadeIn;
   animation-duration: 600ms;

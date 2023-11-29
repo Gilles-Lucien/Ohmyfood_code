@@ -181,10 +181,6 @@
 
 /// Entrées
 
-.entree {
-  transform: translateY(20px);
-}
-
 @for $i from 1 through 4 {
   .entree:nth-child(#{$i}) {
     animation-name: menuCardFadeIn;
