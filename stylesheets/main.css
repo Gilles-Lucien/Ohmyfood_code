@@ -442,8 +442,9 @@ button:hover {
 .fonctionnement__cards__card .fa-solid {
   margin-right: 25px;
   margin-left: 11px;
+  transition: all 0.2s ease-in-out;
 }
-.fonctionnement__cards__card .fa-store {
+.fonctionnement__cards__card:hover .fa-solid {
   color: #9356dc;
 }
 .fonctionnement__cards__card div {

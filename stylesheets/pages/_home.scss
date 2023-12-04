@@ -120,9 +120,10 @@
       .fa-solid {
         margin-right: 25px;
         margin-left: 11px;
+        transition: all 0.2s ease-in-out;
       }
 
-      .fa-store {
+      &:hover .fa-solid {
         color: $brand-color;
       }
 
